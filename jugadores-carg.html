@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cargar Jugador - ADMIN</title>
+	<link rel="stylesheet" type="text/css" href="css/2.css">
+	<link rel="stylesheet" type="text/css" href="css/res.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+        <nav class="menu">
+            <ul>
+                
+                <li>ADMIN
+                
+                    <ul>
+                        <li><a href="cargar-resultados.html">Cargar Resultados</a></li>
+                        <li><a href="equipos-admin.html">Cargar Equipos</a></li>
+                        <li><a href="jugadores-carg.html">Cargar Jugadores</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="resultados.php">Resultados</a></li>
+                <li><a href="mostrarequipos.php">Equipos</a></li>
+                <li><a href="mosjug.php">Jugador</a></li>
+                <li><a href="cerrar.html">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<h1>Cargar Resultados de Partidos</h1>
+
+	<form action="carg-jg.php" method="POST">
+		
+		
+		<h2>Asociacion</h2>
+		<input type="text" name="aso" placeholder="Asociacion">
+		<br>
+		<h2>Nombre del Equipo</h2>
+		<input type="text" name="nome" placeholder="Nombre del Equipo">
+		<br>
+		<h2>Nombre y Apellido del Jugador</h2>
+		<input type="text" name="nom" placeholder="Nombre y Apellido del Jugador">
+		<br>
+		<h2>Faltas del Jugador</h2>
+		<input type="text" name="falt" placeholder="Faltas del Jugador">
+		<br>
+		<h2>Puntos del Jugador</h2>
+		<input type="text" name="punt" placeholder="Puntos del Jugador">
+		<br>
+		<h2>Fecha</h2>
+		<input type="text" name="fecha" placeholder="Fecha del Partido">
+		<input type="submit" value="Enviar">
+
+	</form>
+
+</body>
+</html>

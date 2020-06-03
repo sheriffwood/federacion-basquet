@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de Admin</title>
+    <link rel="stylesheet" href="css/1.css">
+</head>
+<script>
+    
+
+   */ var getData = function (){
+
+        var user = document.getElementById("user").value;
+        var pass = document.getElementById("pass").value;
+
+
+
+        
+
+        if (user == "juancarlos" && pass == "1234"){
+
+            alert("Iniciado");
+
+            
+
+        }else{
+
+            alert("F");
+
+        }
+
+    }*/
+
+    var res = function (){
+
+        var user2 = document.getElementById("user2").value;
+        var pass2 = document.getElementById("pass2").value;
+        var email = document.getElementById("email").value;
+        var tel = document.getElementById("tel").value;
+
+        if (user2 == "juancarlos"){
+
+            alert("User registrado");
+
+        }
+
+
+
+
+
+    }
+
+    
+
+</script>
+<body>
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+        
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form method="post" action="login.php">
+                <table>
+
+                
+                Usuario</label></td></tr>
+                <input type="text" name="txtusuario"/></td></tr>
+                <label>Password</label></td></tr>
+                <input type="password" name="txtpassword" /> </td></tr>
+                <input type="submit" value="Ingresar" /> </td></tr>
+
+                </table>
+            </form>
+        </div>
+        
+        <div class="formulario">
+            <h2>Crea tu Cuenta</h2>
+            <form action="guardar.php" method="POST">
+                <input type="text" name="user2" id = "user2"placeholder="Usuario" required>
+                
+                <input type="password" name="pass2" id = "pass2" placeholder="Contraseña" required>
+                
+                <input type="email" name="email" id = "email" placeholder="Correo Electronico" required>
+                
+                <input type="text" name="tel" id = "tel" placeholder="Teléfono" required>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="reset-password">
+            <a href="#">Olvide mi Contraseña?</a>
+        </div>
+    </div>
+    <script src="js/fi.js"></script>    
+    <script src="js/second.js"></script>
+    
+</body>
+</html>
